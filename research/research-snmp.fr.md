@@ -44,3 +44,20 @@ OID : `1.3.6.1.4.1.9.9.68.1.2.2.1.2`
 
 Ceci renvoie la correspondance VLAN-INTERFACE sur le Switch.
 
+## Trunks
+
+Pour récupérer et gérer les trunks, on utilise la CISCO-VTP-MIB. \
+Dans cette MIB, on utilise la table vlanTrunkPortTable, qui recense toutes les informations dont nous avons besoin, à savoir :
+- Index de l'interface
+- Vlans autorisés ou "taggés"
+- Vlan natif
+- Statut de l'interface "trunking"/"not trunking"
+
+Les VLANS taggés sont représentés par un octet string, de la forme : \
+`Name/OID: vlanTrunkPortVlansEnabled.10535; Value (OctetString): 0x00 00 00 00 00 00 00 00 88 80 80 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 70 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00`
+
+Une fois transformé en binaire, cette valeur permet de récupérer l'état "autorisé sur le trunk" de chaque VLAN, grâce à l'état du bit correspondant. \
+Exemple : Le bit 80 représente l'état du VLAN 80, s'il est à '1', le vlan est autorisé sur le trunk.
+
+Ces OIDs sont en read/write, ce qui signifie qu'on peut pousser une configuration différente sur ces OIDs. Il suffit donc de changer l'état d'un bit, de reconstruire l'octet string, puis de le pousser avec snmpset pour autoriser ou bloquer un vlan sur le trunk.
+
