@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: hugo
+    runs-on: hugo_sdn_hugo
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
