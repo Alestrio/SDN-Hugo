@@ -18,7 +18,7 @@ Thus, the Github platform automatically generates the scripts and commands we ne
 Then, we configure the "github actions" part. \
 A Github action is a YAML file in the folder : .github/workflows and describes a sequence of instructions to execute when updating a branch.
 
-yaml
+```yaml
 name: GitHub Pages
 
 on:
@@ -48,5 +48,3 @@ jobs:
 ```
 
 This script allows you to automate the update of the documentation on the server during a "push" on the "main" branch.
-
-Translated with www.DeepL.com/Translator (free version)
