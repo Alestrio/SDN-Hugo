@@ -9,14 +9,14 @@ This article is about the CI/CD we are applying for our project.
 
 ## Documentation
 
-We use Github to store the sources of the documentation (this website). So, to deploy new versions, we decided to use a CI/CD. CI/CD stands for Continuous Integration / Continuous Development, and allows to automate the testing and the deployment part of a project.
+We use __Github__ to store the sources of the documentation (this website). So, to deploy new versions, we decided to use a __CI/CD__. CI/CD stands for Continuous Integration / Continuous Development, and allows to automate the testing and the deployment part of a project.
 
-First of all, we have to configure the hosting machine. Since our site is self-hosted, we are going to use what is called a "self-hosted github runner", whose documentation can be found here: https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners 
+First of all, we have to configure the hosting machine. Since our site is self-hosted, we are going to use what is called a "__self-hosted github runner__", whose documentation can be found here: https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners 
 
 Thus, the Github platform automatically generates the scripts and commands we need, in order to install our runner.
 
 Then, we configure the "github actions" part. \
-A Github action is a YAML file in the folder : .github/workflows and describes a sequence of instructions to execute when updating a branch.
+A Github action is a YAML file in the folder : __.github/workflows__ and describes a sequence of instructions to execute when updating a branch.
 
 ```yaml
 name: GitHub Pages

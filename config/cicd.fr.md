@@ -9,14 +9,14 @@ Cet article traite de la CI/CD que nous appliquons pour notre projet.
 
 ## Documentation
 
-Nous utilisons Github afin de stocker les sources de la documentation (ce site web). Ainsi, pour déployer les nouvelles versions, nous avons décidé d'utiliser une CI/CD. CI/CD veut dire Continuous Integration / Continuous Developpement, et permet d'automatiser la partie tests et la partie déploiement d'un projet.
+Nous utilisons __Github__ afin de stocker les sources de la documentation (ce site web). Ainsi, pour déployer les nouvelles versions, nous avons décidé d'utiliser une __CI/CD__. CI/CD veut dire Continuous Integration / Continuous Developpement, et permet d'automatiser la partie tests et la partie déploiement d'un projet.
 
-Avant toute chose, il faut configurer la machine d'hébergement. Puisque notre site est auto-hébergé, nous allons utiliser ce que l'on appelle un "self-hosted github runner", dont la documentation est trouvable ici : https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners 
+Avant toute chose, il faut configurer la machine d'hébergement. Puisque notre site est auto-hébergé, nous allons utiliser ce que l'on appelle un "__self-hosted github runner__", dont la documentation est trouvable ici : https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners 
 
 Ainsi, la plateforme Github génère automatiquement les scripts et commandes dont nous avons besoin, afin d'installer notre runner.
 
 Ensuite, nous configurons la partie "github actions". \
-Une action Github est un fichier YAML dans le dossier : .github/workflows et décrit une suite d'instructions à exécuter lors de la mise à jour d'une branche.
+Une action Github est un fichier YAML dans le dossier : __.github/workflows__ et décrit une suite d'instructions à exécuter lors de la mise à jour d'une branche.
 
 ```yaml
 name: GitHub Pages
