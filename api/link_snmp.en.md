@@ -1,5 +1,5 @@
 ---
-title: "SNMP/API link".
+title: "SNMP/API link"
 date: 2021-10-17T12:42:10Z
 tags: ["notice", "api", "snmp"]
 draft: false
