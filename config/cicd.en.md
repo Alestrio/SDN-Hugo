@@ -48,3 +48,46 @@ jobs:
 ```
 
 This script allows you to automate the update of the documentation on the server during a "push" on the "main" branch.
+
+## API
+
+We also use Github to store the sources of our __API__, so we naturally chose to create a __CI/CD__ also for this part of our project. \
+The purpose of this CI/CD is to automate the creation of a __Docker__ container from our API.
+
+Here is the file related to these actions:
+
+```yaml
+name: Docker Image CI # Action name
+
+on:
+  push:
+    branches: [ main ] # When pushing on the MAIN branch
+  pull_request:
+    branches: [ main ] # When PRing the MAIN branch
+
+jobs:
+  build:
+    runs-on: sdn-api # Runs on the runner installed on the datacenter machine
+    steps:
+    - uses: actions/checkout@v2 # Retrieves the latest version of the project
+      with:
+        fetch-depth: 0
+    - name: Docker login 
+     # Connect to DockerHub with the login/password contained on the Github platform in "secrets
+      env:
+        DOCKER_USER: ${{secrets.DOCKER_USER}}
+        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+      run: |
+        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+      working-directory: /home/user/SDN-Cloudstack/SDN-Cloudstack
+    - name: Build the Docker image  
+    # Build the docker image from the Dockerfile
+      run: docker image build . --file Dockerfile --tag alestrio/sdn-cloudstack:latest
+      working-directory: /home/user/SDN-Cloudstack/SDN-Cloudstack
+    - name: Docker push 
+     # Send the Docker image online to DockerHub
+      run: docker image push ${{secrets.DOCKER_USER}}/sdn-cloudstack:latest
+      working-directory: /home/user/SDN-Cloudstack/SDN-Cloudstack
+```
+
+So, at each __push__ on the __main__ branch (the production branch), __the Docker__ image of the project is regenerated and sent to __DockerHub__, then we just have to restart the Docker-Compose at the end, an automatable task, but we want to keep it manual, since it is a production machine.

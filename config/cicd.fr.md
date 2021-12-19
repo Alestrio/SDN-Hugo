@@ -48,3 +48,46 @@ jobs:
 ```
 
 Ce script permet d'automatiser la mise à jour de la documentation sur le serveur lors d'un "push" sur la branche "main".
+
+## API
+
+Nous utilisons aussi Github afin de stocker les sources de notre __API__, nous avons donc naturellement choisi de créer une __CI/CD__ aussi pour cette partie de notre projet. \
+Le but de cette CI/CD est d'automatiser la création d'un container __Docker__ à partir de notre API.
+
+Voici le fichier lié à ces actions :
+
+```yaml
+name: Docker Image CI  # Nom de l'action
+
+on:
+  push:
+    branches: [ main ]  # Lors d'un push sur la branche MAIN
+  pull_request:
+    branches: [ main ]  # Lors d'un PR sur la branche MAIN
+
+jobs:
+  build:
+    runs-on: sdn-api  # Tourne sur le runner installé sur la machine du datacenter
+    steps:
+    - uses: actions/checkout@v2  # Récupère la dernière version du projet
+      with:
+        fetch-depth: 0
+    - name: Docker login 
+     # Se connecte à DockerHub avec les login/password contenus sur la plateforme Github en "secrets"
+      env:
+        DOCKER_USER: ${{secrets.DOCKER_USER}}
+        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+      run: |
+        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+      working-directory: /home/user/SDN-Cloudstack/SDN-Cloudstack
+    - name: Build the Docker image  
+    # Crée l'image docker à partir du Dockerfile
+      run: docker image build . --file Dockerfile --tag alestrio/sdn-cloudstack:latest
+      working-directory: /home/user/SDN-Cloudstack/SDN-Cloudstack
+    - name: Docker push 
+     # Envoie l'image Docker en ligne sur DockerHub
+      run: docker image push ${{secrets.DOCKER_USER}}/sdn-cloudstack:latest
+      working-directory: /home/user/SDN-Cloudstack/SDN-Cloudstack
+```
+
+Ainsi, à chaque __push__ sur la branche __main__ (la branche de production), __l'image Docker__ du projet est regénérée et envoyée sur __DockerHub__, il suffit ensuite pour nous de redémarrer le Docker-Compose à la fin, tâche automatisable, mais que nous voulons garder manuelle, puisque qu'il s'agit d'une machine de production.
