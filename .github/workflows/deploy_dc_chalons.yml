@@ -16,10 +16,9 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
-      - name: Pull new version
-        run: git pull
-        working-directory: /home/user/compose/hugo/sdn_notice/content
+          path: './compose/hugo/'
+      - name: copy files
+        run: rm -rf /home/user/compose/hugo/sdn-notice/content/* && cp -R /home/user/compose/hugo/SDN-Hugo/* /home/user/compose/hugo/sdn-notice/content/
 
       - name: Deploy
         run: hugo
