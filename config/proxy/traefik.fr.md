@@ -18,7 +18,7 @@ Il faut pour cela, lui donner le chemin du socket Docker, ce que l'on verra dans
 
 ## Configuration
 
-La configuration du reverse-proxy __Traefik__ est très simple. Tout d'abord, il faut __instancier__ un container Traefik dans le ficheir __docker-compose__ :
+La configuration du reverse-proxy __Traefik__ est très simple. Tout d'abord, il faut __instancier__ un container Traefik dans le fichier __docker-compose__ :
 
 ```yaml
   reverse-proxy:
