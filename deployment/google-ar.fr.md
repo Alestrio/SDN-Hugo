@@ -5,11 +5,11 @@ tags: ["notice", "docker", "compose", "Google"]
 draft: false
 ---
 
-Originellement, l'hébergement de l'image Docker se faisait sur DockerHub, qui propose l'hébergement d'[___UNE___] image Docker privée. Notre projet en nécessite au minimum deux, ainsi, il a fallu trouver d'autres solutions.
+Originellement, l'hébergement de l'image Docker se faisait sur DockerHub, qui propose l'hébergement d'___UNE___ image Docker privée. Notre projet en nécessite au minimum deux, ainsi, il a fallu trouver d'autres solutions.
 
 ## Google Cloud Platform
 
-Et c'est dnas nos recherches que nous avons découvert __Google Cloud Platform__, aussi appelé "__GCP__". \
+Et c'est dans nos recherches que nous avons découvert __Google Cloud Platform__, aussi appelé "__GCP__". \
 Cet ensemble d'outils cloud signé Google propose un service d'hébergement de conteneurs Docker appelé __Google Artifact Registry__, et propose une offre d'essai comprenant 300$ pendant 90j. \
 Vu l'aspect bon marché de cette solution (prix ici : https://cloud.google.com/artifact-registry/pricing) et le crédit qui nous est offert, nous avons décidé de profiter de cette offre, afin de mettre à niveau notre hébergement d'images Docker.
 

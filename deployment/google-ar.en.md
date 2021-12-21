@@ -5,7 +5,7 @@ tags: ["notice", "docker", "compose", "Google"]
 draft: false
 ---
 
-Originally, the Docker image hosting was done on DockerHub, which offers hosting of [___ONE___] private Docker image. Our project requires at least two, so we had to find other solutions.
+Originally, the Docker image hosting was done on DockerHub, which offers hosting of ___ONE___ private Docker image. Our project requires at least two, so we had to find other solutions.
 
 ## Google Cloud Platform
 
