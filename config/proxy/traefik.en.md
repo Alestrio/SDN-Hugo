@@ -94,8 +94,8 @@ We can then activate the service on the different containers:
 
 Once the configuration is done, we can access the web interface, which runs on port 8080:
 
-![dashboard1](../../images/dashboard1.png)
+![dashboard1](../../../images/dashboard1.png)
 
-![dashboard21](../../images/dashboard2.png)
+![dashboard21](../../../images/dashboard2.png)
 
 This interface is only informative, no configuration can be done from it.
