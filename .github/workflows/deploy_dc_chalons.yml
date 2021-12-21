@@ -16,9 +16,8 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          path: './compose/hugo/'
       - name: copy files
-        run: rm -rf /home/user/compose/hugo/sdn-notice/content/* && cp -R /home/user/compose/hugo/SDN-Hugo/* /home/user/compose/hugo/sdn-notice/content/
+        run: rm -rf /home/user/compose/hugo/sdn-notice/content/* && cp -R /home/user/compose/SDN-Hugo/SDN-Hugo/* /home/user/compose/hugo/sdn-notice/content/
 
       - name: Deploy
         run: hugo
