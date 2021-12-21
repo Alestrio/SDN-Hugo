@@ -1,7 +1,7 @@
 ---
 title: "Google Artifact Registry"
 date: 2021-12-21T18:17:10Z
-tags: ["notice", "docker", "compose", "Google"]
+tags: ["notice", "docker", "compose", "google"]
 draft: false
 ---
 
