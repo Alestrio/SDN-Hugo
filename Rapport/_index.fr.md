@@ -30,7 +30,7 @@ Plan :
       4. Travail colaboratif
    3. Ammelioration envisageable
       1. Switch mis a jours en temps réel
-      2. Découverte automatique de l'infrastructure
+      2. Découverte automatique de l'infrastructure et instanciation auto d'apis
       3. Prise en charge de switch de nouvelle generation
       4. Création de graphique et alerte pour supervision
 7. Conclusion

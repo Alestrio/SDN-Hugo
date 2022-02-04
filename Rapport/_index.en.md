@@ -11,31 +11,31 @@ pre = "<b>A. </b>"
 
 ## Report
 
-Plan :
+Planification :
 
-1. Page de garde / index rapport
-2. Remerciement
-3. Resume et mots clef (nb - doublons index du site)
-4. Sommaire
-5. Introduction
-   1. Problematique : **Comment adapter facilement la configuration des actifs réseau des salles de TP?**
-6. Developement
-   1. Contexte du projet
-      1. Besoin
-      2. Suite d'un autre projet
-      3. Contraintes techniques aplliquer au projet
-   2. Mise en oeuvre
-      1. Connexion entre l'api et le switch
-      2. L'api
-      3. L'interface web
-      4. Travail colaboratif
-   3. Ammelioration envisageable
-      1. Switch mis a jours en temps réel
-      2. Découverte automatique de l'infrastructure
-      3. Prise en charge de switch de nouvelle generation
-      4. Création de graphique et alerte pour supervision
+1. front page / report index
+2. Thanks
+3. Resume and key word (nb - doubled from the site index)
+4. Table of content
+5. Intro
+   1. Problematic : **How can we easily adapt the cofiguration of the netwok pe room's actif?**
+6. Development
+   1. Project situation
+      1. Need
+      2. Following an older project
+      3. Technical constraint applied to the project
+   2. Realisation
+      1. Link beetween the api and switch
+      2. The api
+      3. The web interface
+      4. Collaborative work
+   3. Considered update
+      1. Real time update beetwen the switch api
+      2. Auto-discovery of the infrastructure
+      3. Care of new generation switch
+      4. Chart creation and alerte for supervision
 7. Conclusion
-8. Lexique - Glossaire
-9. Blibliographie
-10. Sommaire des Annexes
+8. Lexicon - Glossary
+9. Blibliography
+10. Annexes' table of content
 11. Annexes
