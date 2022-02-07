@@ -14,7 +14,7 @@ img {
 }
 </style>
 
-![logo_fac](../images/logo_iut.png) ![logo_rt](../images/logo_rt.png)
+![logo_fac](../../images/logo_iut.png) ![logo_rt](../../images/logo_rt.png)
 
 # SDN-Project
 
@@ -26,7 +26,7 @@ DUT RT Chalons en Champagne
 
 Years 2021-2022
 
-![logo_fac](../images/logo_fac.png)
+![logo_fac](../../images/logo_fac.png)
 # Report
 
 ## Report
