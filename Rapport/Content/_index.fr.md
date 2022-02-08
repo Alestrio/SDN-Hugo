@@ -3,8 +3,14 @@ title = "Introduction"
 date = 2022-01-27T17:07:28+02:00
 weight = 4
 chapter = true
-
 +++
+
+<!---We need to justify the text---> 
+<style>
+    p {
+        text-align: justify;
+    }
+</style>
 
 
 Le SDN ou Software Defined Network est un concept dont le but est de créer ou modifier une infrastructure réseau de façon logicielle.
