@@ -6,7 +6,7 @@ tags: ["rapport"]
 weight: 3
 ---
 
-[Introduction](../Content/_index.en.md)
+[Introduction](/content/)
 
 1. [Project situation](../Content/developement/project_situation/_index.en.md)
    1. [Need](../Content/developement/project_situation/need.en.md)
