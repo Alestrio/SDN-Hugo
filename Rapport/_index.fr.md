@@ -19,7 +19,7 @@ img {
 
 Par **LEBEL Alexis** et **LEFEVRE Elwan**
 
-A dèstination de **HUSSENET Laurent**
+A destination de **HUSSENET Laurent**
 
 DUT RT Chalons en Champagne
 

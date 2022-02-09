@@ -5,8 +5,6 @@ weight: 4
 draft: false
 ---
 
-
-
 Le SDN ou Software Defined Network est un concept dont le but est de créer ou modifier une infrastructure réseau de façon logicielle.
 Sur les actifs de nouvelle génération, il est integré dans les systèmes d'exploitation des actifs réseau, sous forme d'une interface de communication, reposant sur des technologies de communication standards (HTTP).
 Cette interface appellée API permet la configuration des actifs en envoyant des requêtes HTTP à l'API, c'est à dire, des requêtes similaires à celles utilisées par un navigateur.
