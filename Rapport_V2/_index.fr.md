@@ -26,4 +26,3 @@ DUT RT Chalons en Champagne
 Année 2021-2022
 
 ![logo_fac](../../images/logo_fac.png)
-
