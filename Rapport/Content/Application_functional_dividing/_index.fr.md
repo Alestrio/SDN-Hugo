@@ -7,4 +7,4 @@ pre = "<b>II. </b>"
 
 +++
 
-# Summary (need to be done)
+Dans cette seconde partie, nous allons voir le but des différentes parties de l'application ainsi que leurs fonctionnements. Ainsi, nous parcourerons les trois 3 parties logiciels et expliquerons ce que nous attendons des topologies.
