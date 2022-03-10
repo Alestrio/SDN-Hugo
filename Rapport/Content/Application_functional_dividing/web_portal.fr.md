@@ -13,3 +13,5 @@ Afin de rentre l'experience utilisateur la plus simple possible, l'interface web
 Le premier onglet contiendra est un résumé de la salles actuellements séléctionné, on y trouvera par exemple le status des actifs pour savoir si ils sont en lignes ou pas.
 Le second lui est dédié à la configuration au cas à cas. Dans cette onglets, on pourra configurer manuellement les différents **vlans**, **trunk** et **interfaces** afin de crée les topologies pour le futur.
 Le troixième onglet lui donnera acces à la séléction de topologie. C'est sur cette page que l'on pourra choisir la topologie que l'on souhaite déployer ainsi que de visualiser qu'elle topologie est actuellent en production.
+
+Nous alons maintenant voir le but et fonctionnement du gestionnaire de topologie.
