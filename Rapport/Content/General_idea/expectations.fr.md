@@ -17,7 +17,7 @@ Exemple : `clé: valeur`
 Cet outil devra proposer une méthode simple et graphique permettant **l'ajout, la modification et la suppression** des topologies, tout en permettant de **visualiser** les différentes projections.
 
 
-## Exemple de fonctionnement :
+## Situation initiales et prérequis :
 - M. ETIENNE, professeur de l'IUT de Chalons-en-Champagne, enseigne un module d'infratructure wifi.
 - La configuration des prises réseaux est conçue pour un usage général pour la plupart des TP.
 - Ce TP requiert une configuration spécifique, pour avoir accès aux services du data-center.
