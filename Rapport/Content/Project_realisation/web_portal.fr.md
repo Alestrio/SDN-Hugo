@@ -27,13 +27,13 @@ Cette partie est gardée volontairement simple, puisque le gros du travail est g
 ## État d'avancement
 A ce jour, le portail web est en cours de développement.
 Voici les fonctions qui sont actuellement implémentées :
-    - Connexion
-    - Déconnexion
-    - Résumé
-    - Création de configuration
-    - Modification de configuration
-    - Application de configuration
-    - Configuration "A la volée"
+- Connexion
+- Déconnexion
+- Résumé
+- Création de configuration
+- Modification de configuration
+- Application de configuration
+- Configuration "A la volée"
 
 Il est possible d'ajouter la mise à jour automatique de la page Résumé lorsqu'un port change d'état (Branché, débranché). Cela permet de voir rapidement les changements de port. Cependant, par contrainte de temps, nous n'avons pas pu implémenter cette fonctionnalité. Nous y avons quand même pensé, et cela nous a permis de mettre au point le fonctionnement général et un exemple de code (cf Annexe x).
 Ci-dessous, un schéma du fonctionnement de cette fonctionnalité.
