@@ -7,4 +7,4 @@ pre = "<b>IV. </b>"
 
 +++
 
-# Summary (need to be done)
+# Mise en oeuvre du projet
