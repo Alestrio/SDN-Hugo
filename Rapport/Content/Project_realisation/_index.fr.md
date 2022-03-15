@@ -2,11 +2,11 @@
 title = "Réalisation du projet"
 date = 2022-01-27T17:07:28+02:00
 weight = 3
-chapter = false
+chapter = true
 pre = "<b>III. </b>"
 
 +++
 
 # Réalisation du projet
 
-{{< .TableOfContents >}}
+{{< table_of_contents >}}
