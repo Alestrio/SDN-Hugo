@@ -8,3 +8,5 @@ pre = "<b>III. </b>"
 +++
 
 # Réalisation du projet
+
+{{.TableOfContents}}
