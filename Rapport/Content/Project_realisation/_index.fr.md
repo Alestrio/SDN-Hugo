@@ -8,5 +8,3 @@ pre = "<b>III. </b>"
 +++
 
 # Réalisation du projet
-
-{{< table_of_contents >}}
