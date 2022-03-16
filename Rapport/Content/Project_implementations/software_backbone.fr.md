@@ -6,7 +6,7 @@ tags: ["rapport", "implementation"]
 weight: 1
 ---
 
-# Conteneurisation 
+## Conteneurisation 
 
 L'un des principes que nous avons tenu à mettre en place dans le cadre de notre projet est de conteneuriser nos applications.
 La **conteneurisation** est une technique qui consiste à encapsuler des applications dans des unités indépendantes et isolées. Cela permet un déploiement rapide, et plus de sécurité.
@@ -22,7 +22,7 @@ Dans le cadre de notre projet, la conteneurisation a été mise en place, de fa�
 
 Pour démarrer ces services d'une seule commande, nous utilisons **Docker Compose**. Docker Compose est un outil qui permet de déployer des conteneurs, et de les configurer dans un fichier YAML. Le fichier YAML de configuration utilisé pour notre projet est proposé en annexe x.
 
-# Traefik
+## Traefik
 
 Traefik est un **reverse proxy**, dont la spécificité est de découvrir les services à fournir depuis le service Docker.
 Sa configuration se fait via des **tags** appliqués aux conteneurs, dans le fichier de Docker Compose. Via ces tags, nous pouvons configurer l'URL qui route sur le service, le port du service, et d'autres paramètres utiles pour un reverse proxy.
@@ -30,7 +30,7 @@ Traefik fournit aussi une interface web, qui permet de surveiller le bon fonctio
 ![Traefik rp](/images/dashboard1.png)
 Évidemment, le service de reverse proxy ne fonctionnerait pas pour un utilisateur, sans résolution de nom, il fonctionne donc en union avec le DNS.
 
-# DNS et Délégation de zone
+## DNS et Délégation de zone
 
 Le **DNS** permet de traduire des noms de domaine en adresses IP. Il est un des fondements d'Internet, et notre projet ne déroge pas à ce principe.
 Dans le cadre de notre projet, plusieurs ressources nous ont été accordées :
