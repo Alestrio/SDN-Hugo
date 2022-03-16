@@ -38,6 +38,7 @@ Dans le cadre de notre projet, plusieurs ressources nous ont été accordées :
 - une délégation de zone : sdn.chalons.univ-reims.fr
 
 Ces ressources ont été attribuées comme suit :
+
 | Service | Adresse | Port |
 | :--- | :--- | :--- |
 | Interface de gestion Traefik | cloudstack.chalons.univ-reims.fr | 8080 |
