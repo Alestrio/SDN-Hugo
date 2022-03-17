@@ -20,4 +20,4 @@ Pour cela nous avons donc envisagé de construire cette interface logiciel afin 
 
 Ce gestionnaire de topologies est également le pont entre notre portail web, l'API que bous développons et notre base de donnée car en effet c'est au travers de celui-ci que nous allons être capable de projeter et récupérer les topologies sur les actifs, grâce à une interface utilisateur Web.
 
-![gestionnaire_de_topo.png](../../../images/gestionnaire_de_topo.png)
+![gestionnaire_de_topo.png](../../../../images/gestionnaire_de_topo.png)
