@@ -14,7 +14,7 @@ Cette interface a donc pour but de traduire les actions SNMP en URL paramétrabl
 
 ## Le protocole SNMP
 Le protocole SNMP, basé sur UDP, est un protocole qui permet de communiquer avec des appareils pour récupérer des informations ou pousser de la configuration. Il utilise un système d'**OID** (Object Identifier) pour définir les informations que l'on souhaite récupérer. Un OID est un identifiant unique qui permet de définir un objet. Il est défini sous la forme d'une suite de chiffres, séparés par des points. Exemple d'OID : `1.3.6.1.2.1.1.5` (Permet de récupérer le nom d'hôte).
-Les OIDs nécessaires pour notre interface sont définis dans le fichier de configuration de ce service (cf Annexe x).
+Les OIDs nécessaires pour notre interface sont définis dans le fichier de configuration de ce service (cf Annexe 3).
 
 ## Configuration obligatoire de l'actif réseau
 Il est important de configurer l'actif réseau avant de pouvoir utiliser l'interface de configuration sur ce dernier. Voici les paramètres à configurer :
@@ -24,7 +24,7 @@ Il est important de configurer l'actif réseau avant de pouvoir utiliser l'inter
 
 ## Une API :
 Puisque ce service traduit les actions SNMP en URL paramétrables, il s'agit d'une **API**. Une API est un serveur qui permet, via des URL, de récupérer des informations ou d'exécuter des actions. Dorénavant, nous ne parlerons plus d'"interface de configuration logicielle" mais d'**API**.
-Une liste des toutes les URLs de l'API est disponible en Annexe x.
+Une liste des toutes les URLs de l'API est disponible en Annexe 4.
 
 ## Construction de l'API
 ### Open API

@@ -46,7 +46,7 @@ La machine virtuelle qui est utilisée pour le déploiement automatique est un s
 
 Une fois ces actions effectuées, la version en production est mise à jour.
 
-Ce fichier est proposé en annexe X.
+Ce fichier est proposé en annexe 7.
 
 ## Google Cloud, Artifact Registry
 

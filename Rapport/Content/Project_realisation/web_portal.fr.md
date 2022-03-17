@@ -14,7 +14,7 @@ Cette partie est celle qui tourne sur le serveur. Elle gère les requêtes HTTP 
 Cela veut dire que l'utilisateur peut accéder à des pages, qui sont générées par le serveur.
 Le serveur qui met à disposition le portail web est appellé **Werkzeug**. Il s'agit du serveur integré au paquet **Flask**, de python. Ainsi, pour lancer le serveur, il suffit de lancer le script Python qui contient le point d'entrée du serveur.
 
-La partie serveur repose aussi sur **Jinja2**, qui est un moteur de template. Il permet de générer des pages HTML à partir de templates. Les templates sont des fichiers HTML qui contiennent des instructions pour y intégrer des données de façon dynamique. (cf. Annexe x)
+La partie serveur repose aussi sur **Jinja2**, qui est un moteur de template. Il permet de générer des pages HTML à partir de templates. Les templates sont des fichiers HTML qui contiennent des instructions pour y intégrer des données de façon dynamique. (cf. Annexe 1)
 
 La partie authentification est gérée par le module **flask-login**. Il permet de gérer les connexions de l'utilisateur. Les informations de connexion sont stockées dans un fichier [YAML](https://fr.wikipedia.org/wiki/YAML) qui est lu par le module **flask-login**.
 
@@ -35,7 +35,7 @@ Voici les fonctions qui sont actuellement implémentées :
 - Application de configuration
 - Configuration "A la volée"
 
-Il est possible d'ajouter la mise à jour automatique de la page Résumé lorsqu'un port change d'état (Branché, débranché). Cela permet de voir rapidement les changements de port. Cependant, par contrainte de temps, nous n'avons pas pu implémenter cette fonctionnalité. Nous y avons quand même pensé, et cela nous a permis de mettre au point le fonctionnement général et un exemple de code (cf Annexe x).
+Il est possible d'ajouter la mise à jour automatique de la page Résumé lorsqu'un port change d'état (Branché, débranché). Cela permet de voir rapidement les changements de port. Cependant, par contrainte de temps, nous n'avons pas pu implémenter cette fonctionnalité. Nous y avons quand même pensé, et cela nous a permis de mettre au point le fonctionnement général et un exemple de code (cf Annexe 2).
 Ci-dessous, un schéma du fonctionnement de cette fonctionnalité.
 ![maj_auto](/images/maj_auto.jpg)
 

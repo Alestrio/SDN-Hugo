@@ -13,7 +13,7 @@ Les topologies sont stockées sous forme de chaînes de caractères au format YA
 - **vlans** : la liste des VLANs utiles à l'application de la topologie, à créer si nécessaire
 - **interfaces** : la liste des configurations des interfaces de la topologie
 - **trunks** : la liste des configurations des trunks de la topologie
-Un exemple de topologie est proposé en annexe x
+Un exemple de topologie est proposé en annexe 5
 
 ## Comment sauvegarder une topologie
 
