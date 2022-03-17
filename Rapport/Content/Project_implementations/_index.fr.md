@@ -6,5 +6,3 @@ chapter = false
 pre = "<b>IV. </b>"
 
 +++
-
-# Mise en oeuvre du projet

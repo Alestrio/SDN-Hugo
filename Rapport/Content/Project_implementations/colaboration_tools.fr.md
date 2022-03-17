@@ -10,7 +10,7 @@ Cette section est consacrée aux outils de collaboration que nous avons utilisé
 
 ## Hugo
 
-Hugo est un générateur de **site web statique**, à partir de fichiers **Markdown**. Nous l'avons utilisé tout au long de ce projet pour créer une documentation pour le projet. De cette façon, nous avions par écrit, toutes les informations techniques concernant le projet, ce que nous a permis de ne pas devoir dépendre continuellement de l'autre memebre de l'équipe afin de comprendre et utiliser le travail réalisé.
+Hugo est un générateur de **site web statique**, à partir de fichiers **Markdown**. Nous l'avons utilisé tout au long de ce projet pour créer une documentation pour le projet. De cette façon, nous avions par écrit, toutes les informations techniques concernant le projet, ce qui nous a permis de ne pas devoir dépendre continuellement de l'autre membre de l'équipe afin de comprendre et utiliser le travail réalisé.
 C'est aussi l'outil que nous utilisons afin de créer ce rapport. L'ensemble des fichiers Markdown, sont hébergés sur GitHub, à cette adresse : https://github.com/Alestrio/SDN-Hugo
 
 ## Github
@@ -21,7 +21,9 @@ C'est aussi l'outil que nous utilisons afin de créer ce rapport. L'ensemble des
 
 Le **repository** (endroit où sont stockés les fichiers) est accessible à l'adresse : https://github.com/Alestrio/SDN-Cloudstack/
 
-Afin de travailler chacun de notre côté sur nos tâches respectives, nous avons utilisé des **branches**. Une branche est l'équivalent d'un carrefour où une route se divise en plusieurs chemins. Nous avons créé une branche backend, pour travailler sur tout ce qui concerne les APIs, puis une branche frontend, pour travailler sur tout ce qui concerne le gestionnaire de topologies et l'interface web. L'ensemble est ensuite intégré au projet en production, via la création d'une **Pull request**, qui permet de faire une demande de **fusion** entre deux branches. La branche **master** est ainsi la branche principale, et c'est celle qui est utilisée lors du déploiement automatique du projet.
+Afin de travailler chacun de notre côté sur nos tâches respectives, nous avons utilisé des **branches**. Une branche est l'équivalent d'un carrefour où une route se divise en plusieurs chemins.
+
+Nous avons créé une branche backend, pour travailler sur tout ce qui concerne les APIs, puis une branche frontend, pour travailler sur tout ce qui concerne le gestionnaire de topologies et l'interface web. L'ensemble est ensuite intégré au projet en production, via la création d'une **Pull request**, qui permet de faire une demande de **fusion** entre deux branches. La branche **master** est ainsi la branche principale, et c'est celle qui est utilisée lors du déploiement automatique du projet.
 
 ![branches](/images/branches.png) Branches de travail sur Github
 

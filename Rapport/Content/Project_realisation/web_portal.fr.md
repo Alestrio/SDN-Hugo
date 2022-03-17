@@ -12,7 +12,7 @@ Ce portail web est composé de plusieurs parties :
 ## Partie serveur : Flask
 Cette partie est celle qui tourne sur le serveur. Elle gère les requêtes HTTP générées par l'utilisateur.
 Cela veut dire que l'utilisateur peut accéder à des pages, qui sont générées par le serveur.
-Le serveur qui met à disposition le portail web est appellé **Werkzeug**. Il s'agit du serveur integré au paquet **Flask**, de python. Ainsi, pour lancer le serveur, il suffit de lancer le script Python qui contient le point d'entrée du serveur.
+Le serveur qui met à disposition le portail web est appellé **Werkzeug**. Il s'agit du serveur integré au paquet **Flask**, de Python. Ainsi, pour lancer le serveur, il suffit de lancer le script Python qui contient le point d'entrée du serveur.
 
 La partie serveur repose aussi sur **Jinja2**, qui est un moteur de template. Il permet de générer des pages HTML à partir de templates. Les templates sont des fichiers HTML qui contiennent des instructions pour y intégrer des données de façon dynamique. (cf. Annexe 1)
 
@@ -21,7 +21,7 @@ La partie authentification est gérée par le module **flask-login**. Il permet 
 La finalité de la partie serveur est de fournir les pages WEB à l'utilisateur, et de génerer les requêtes à l'interface logicielle (API) de l'actif à gérer en fonction des demandes de l'utilisateur. Concrètement, lorsque l'utilisateur veut changer un paramètre, il clique sur un bouton, et le serveur génère une requête HTTP qui est envoyée au module logiciel. Le module logiciel gère la modification du paramètre, et renvoie une réponse HTTP qui est envoyée au serveur. Le serveur renvoie la réponse à l'utilisateur. Ainsi, le serveur agit comme un intermédiaire entre l'utilisateur et le module logiciel, ce qui rend transparent l'utilisation du module logiciel.
 
 ## Partie client : Javascript
-Cette partie est celle qui est gérée par le navigateur. Les **scripts** Javascript sont plutôt simples, et sont principalement dédiés à des fonctions de **transformation** de la page. Concrètement, il s'agit de la barre de navigation qui disparait et réapparait lorsque l'utilisateur clique sur un bouton, sur mobile, ou encore la configuration qui apparrait dans le champ de texte lorque l'utilisateur clique sur l'élément de configuration dans la partie "Configuration".
+Cette partie est celle qui est gérée par le navigateur. Les **scripts** Javascript sont plutôt simples, et sont principalement dédiés à des fonctions de **transformation** de la page. Concrètement, il s'agit de la barre de navigation qui disparait et réapparait lorsque l'utilisateur clique sur un bouton, sur mobile, ou encore la configuration qui apparait dans le champ de texte lorque l'utilisateur clique sur l'élément de configuration dans la partie "Configuration".
 Cette partie est gardée volontairement simple, puisque le gros du travail est géré par le serveur Flask.
 
 ## État d'avancement

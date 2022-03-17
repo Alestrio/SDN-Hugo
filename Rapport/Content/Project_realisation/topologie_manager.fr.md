@@ -16,15 +16,15 @@ Via l'interface web, l'utilisateur peut choisir la **topologie** qu'il souhaite 
 
 L'utilisateur peut aussi choisir de configurer l'actif **manuellement**. Il s'agit d'une autre tâche de ce gestionnaire. concrètement, il vient demander à l'API de l'actif, l'état de tous les ports, et les affiche dans une __liste en forme de switch__. L'utilisateur peut alors choisir les ports qu'il souhaite configurer, et changer les valeurs des paramètres. Une fois validée, le gestionnaire va demander à l'API de configurer l'actif, selon les consignes de l'utilisateur, de façon **unitaire**.
 
-Une fonction, que nous n'avons pas encore développé, permettra de mettre à jour de façon **dynamique** l'affichage de l'interface lorsque un appareil est branché ou débranché sur un des ports du switch.
+Une fonction, que nous n'avons pas encore développée, permettra de mettre à jour de façon **dynamique** l'affichage de l'interface lorsque un appareil est branché ou débranché sur un des ports du switch.
 
 ## Authentification
 
 Comme dit précédemment, nous avions à la base, développé un système d'authentification au niveau de l'API, avec les couples identifiant/mot de passe stockés dans la base de données. Cependant, nous avons décidé de ne pas utiliser cette méthode, car elle était beaucoup trop compliquée par rapport au cahier des charges que nous avions. Nous avons donc décidé de créer un système d'authentification au niveau du gestionnaire, avec les identifiants/mot de passe stockés dans un fichier de configuration.
 Cela nous donne donc deux comptes :
-- Un compte administrateur, qui a les droits d'administration du gestionnaire : pour les enseignants.
-- Un compte utilisateur, qui a les droits de lecture seule : pour les étudiants.
+- Un compte **administrateur**, qui a les droits d'administration du gestionnaire : pour les enseignants.
+- Un compte **utilisateur**, qui a les droits de lecture seule : pour les étudiants.
 
 ## Différences par rapport à ce qui a été pensé à la base
 
-Au départ, il était prévu que le gestionnaire de topologie soit responsable de créer et appliquer les configurations sur les actifs, de façon unitaire. Concrètement, à partir des configurations, il devait demander à l'API d'effectuer les changements un par un sur les actifs. cependant, nous avons décidé de déléguer cette tâche à l'API. En effet, les latences inhérentes au protocole de supervision SNMP sont trop importantes pour un traitement unitaire, depuis un système externe à l'API. C'est donc elle qui gère l'application des configurations sur les actifs, en renvoyant les directives via **SNMP** lorsque celles-ci sont perdues. Si ces directives se perdent, c'est parce que SNMP est un protocole qui fonctionne sur UDP, donc en mode non-connecté. il n'y a donc pas de retour une fois la donnée envoyée (ACK en TCP). il faut donc contrôler que la configuration a bien été appliquée sur l'actif, et c'est l'API la mieux placée pour cela.
+Au départ, il était prévu que le gestionnaire de topologie soit responsable de créer et appliquer les configurations sur les actifs, de façon unitaire. Concrètement, à partir des configurations, il devait demander à l'API d'effectuer les changements un par un sur les actifs. Cependant, nous avons décidé de déléguer cette tâche à l'API. En effet, les **latences** inhérentes au protocole de supervision SNMP sont trop importantes pour un traitement unitaire, depuis un système externe à l'API. C'est donc elle qui gère l'application des configurations sur les actifs, en renvoyant les directives via **SNMP** lorsque celles-ci sont perdues. Si ces directives se perdent, c'est parce que SNMP est un protocole qui fonctionne sur UDP, donc en mode non-connecté. il n'y a donc pas de retour une fois la donnée envoyée (ACK en TCP). il faut donc contrôler que la configuration a bien été appliquée sur l'actif, et c'est l'API la mieux placée pour cela.
