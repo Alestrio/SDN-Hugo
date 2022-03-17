@@ -6,7 +6,7 @@ tags: ["rapport", "AFD"]
 weight: 4
 ---
 
-La base de données est la mémoire de notre projet. C'est l'outil qui va nous permettre de stocker l'intégralité des différentes topologies, mais, également de les retrouver quand nécessaire. Les fichiers de topologie peuvent ressembler à ceci :
+La base de données est la mémoire de notre projet. C'est l'outil qui va nous permettre de stocker l'intégralité des différentes topologies, mais, également de les retrouver quand c'est nécessaire. Les fichiers de topologies peuvent ressembler à ceci :
 
 ```json
   {
@@ -37,6 +37,7 @@ La base de données est la mémoire de notre projet. C'est l'outil qui va nous p
     "speed": 0
   }
   ```
+(cf Annexe 5)
 
 C'est donc ainsi que les informations nécessaires à la configuration seront stockées dans notre base de données.
 
@@ -94,14 +95,14 @@ Dans notre cas, on obtiendra :
     ],
 ```
 
-Le dernier cas que nous pouvons rencontrer est le cas d'une interface en mode **access** qui-ce traduit en cisco par :
+Le dernier cas que nous pouvons rencontrer est le cas d'une interface en mode **access** qui se traduit en dialecte Cisco par :
 
 ```config
 SWITCH(config)#interface ethernet0/1
 SWITCH(config-if)#switchport mode access
 ```
 
-Ce qui deviendra dans la base de données :
+Ce qui donnera dans la base de données :
 
 ```json
   {
