@@ -20,7 +20,7 @@ Dans le cadre de notre projet, la conteneurisation a été mise en place, de fa�
 - **Gestionnaire de topologie** : Le gestionnaire de topologie développé pour le projet.
 - **Traefik** : Le reverse proxy, permet de fournir le bon service, en fonction de l'URL demandée.
 
-Pour démarrer ces services d'une seule commande, nous utilisons **Docker Compose**. Docker Compose est un outil qui permet de déployer des conteneurs, et de les configurer dans un fichier YAML. Le fichier YAML de configuration utilisé pour notre projet est proposé en annexe x.
+Pour démarrer ces services d'une seule commande, nous utilisons **Docker Compose**. Docker Compose est un outil qui permet de déployer des conteneurs, et de les configurer dans un fichier YAML. Le fichier YAML de configuration utilisé pour notre projet est proposé en annexe 6.
 
 ## Traefik
 
