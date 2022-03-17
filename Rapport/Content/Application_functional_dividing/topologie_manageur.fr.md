@@ -19,5 +19,3 @@ Notre gestionnaire de topologies aura donc pour but de rendre **compatible** ces
 Pour cela nous avons donc envisagé de construire cette interface logiciel afin de permettre aux **anciens modèles** d'équipement tout comme aux plus récents d'être configurés depuis une seule et même interface.
 
 Ce gestionnaire de topologies est également le pont entre notre portail web, l'API que nous développons et notre base de donnée car en effet c'est au travers de celui-ci que nous allons être capable de projeter et récupérer les topologies sur les actifs, grâce à une interface **Web**.
-
-![gestionnaire_de_topo.png](/images/gestionnaire_de_topo.png)

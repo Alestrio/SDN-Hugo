@@ -7,4 +7,4 @@ pre = "<b>II. </b>"
 
 +++
 
-# Summary (need to be done)
+# Application functionnal dividing
