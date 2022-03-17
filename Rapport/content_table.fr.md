@@ -9,7 +9,7 @@ weight: 3
 [Introduction](../content/)
 
 1. [Idée Générale](../content/general_idea/)
-   1. [Contexte du projet](../content/../content/general_idea/context/)
+   1. [Contexte du projet](../content/general_idea/context/)
    2. [Attentes du projet](../content/general_idea/expectations/)
 2. [Découpage fonctionnel de l'application](../content/developement/application_functional_dividing/)
    1. [Qu'est-ce que une topologie](../content/application_functional_dividing/what_is_a_topo/)
