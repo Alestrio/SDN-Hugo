@@ -8,7 +8,7 @@ weight: 4
 
 La base de données est la mémoire de notre projet. C'est l'outil qui va nous permettre de stocker l'intégralité des différentes topologies, mais, également de les retrouver quand nécessaire. Les fichiers de topologie peuvent ressembler à ceci :
 
-```config
+```json
   {
     "name": "Vlan1",
     "description": "Vlan1",
@@ -35,7 +35,7 @@ La base de données est la mémoire de notre projet. C'est l'outil qui va nous p
     "operstatus": "up",
     "vlan": null,
     "speed": 0
-  },
+  }
   ```
 
 C'est donc ainsi que les informations nécessaires à la configuration seront stockées dans notre base de données.
@@ -55,7 +55,7 @@ Ce qui dans notre base de données ce résumera par :
   {
     "description": "{name}",
     "dot1q_id": {numero}
-  },
+  }
 ```
 
 Le second cas est celui d'une interface en mode **trunk**, ce qui nécessite de faire :
