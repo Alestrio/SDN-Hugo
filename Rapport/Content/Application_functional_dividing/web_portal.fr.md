@@ -13,7 +13,7 @@ L'accès à l'interface se fera donc de plusieurs façons pour la rendre la plus
 La gestion des droits et le système d'authentification est défini par un couple identifiant/mots de passe pour les étudiants et les professeurs. Ceux-ci ne sont pas individuels et sont sauvegardés dans un fichier de configuration.
 
 L'interface en elle même, afin de rendre l'expérience utilisateur la plus simple et agréable possible, a été principalement développée pour fonctionner sur mobile. Cette interface se compose alors de quatres onglets.
-Le premier onglet contiendra une vue "dashboard", qui est un résumé de la salle actuellement séléctionnée, on y trouvera par exemple le statut des actifs pour connaître leur état de fonctionnement.
+Le premier onglet contiendra une vue "dashboard", qui est un résumé de la salle actuellement sélectionnée, on y trouvera par exemple le statut des actifs pour connaître leur état de fonctionnement.
 Le second, "application de la configuration" est dédié à l'application de topologie. C'est sur cette page que l'on pourra choisir la topologie que l'on souhaite déployer ainsi que visualiser quelle topologie est actuellement en production. On pourra donc en sélectionnant la classe, le groupe et le TP, choisir la configuration adaptée et la mettre en production.
 Le troisième onglet, "création de configuration" a lui pour but de créer les différentes configurations. Pour cela, on est ammené à sélectionner les différents **vlans**, **trunk** et **interfaces** que l'on peut alors configurer manuellement avant de sauvegarder cette configuration pour la déployer ultérieurement.
 Le dernier onglet "configuration On The Go" a pour fonction d'activer et désactiver les différentes interfaces avec un clic.
