@@ -20,7 +20,7 @@ Le backbone est-ce que l'on considère comme la colonne vertébrale d'un projet 
 
 #### CI/CD
 
-CI/CD signifie **intégration continue / déploiement continu**. C'est un procédé qui permet de publier automatiquement sur un serveur les avancés d'un projet quand on le juge acceptable. Dans notre cas nous l'utilisons pour publier les mises à jour de l'application ainsi que pour publier notre rapport de projet.
+CI/CD signifie **intégration continue / déploiement continu**. C'est un procédé qui permet de publier automatiquement sur un serveur les avancées d'un projet quand on le juge acceptable. Dans notre cas nous l'utilisons pour publier les mises à jour de l'application ainsi que pour publier notre rapport de projet.
 
 #### DOCKER
 
