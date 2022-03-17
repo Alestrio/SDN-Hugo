@@ -8,11 +8,11 @@ weight: 4
 
 #### ACCESS
 
-Le mode access est un mode de configuration de port sur les équipements cisco qui est utilisé pour la connexion de périphérique (ordinateur, imprimante ...).
+Le mode access est un mode de configuration de port sur les équipements Cisco qui est utilisé pour la connexion de périphérique (ordinateur, imprimante ...).
 
 #### API
 
-API signifie **Application Programming Interface**, une API est dans les fait l'ensemble des fonctions et procédures permettant la création d'une application.
+API signifie **Application Programming Interface**, une API est dans les faits un service qui expose des procédures de configuration et de récupération de données, par des URL paramétrables.
 
 #### BACKBONE
 
@@ -24,31 +24,31 @@ CI/CD signifie **intégration continue / déploiement continu**. C'est un procé
 
 #### DOCKER
 
-Docker est un logiciel qui permet de construire, exécuter et manager des "conteneur" sur des serveurs ou directement dans le cloud. Les conteneurs tant qu'à eux sont des fichiers ou ensemble de fichier qui définisse une application pouvant être exécuter par docker. Un conteneur peut être à peu près tous, du programme en python à un OS.
+Docker est un logiciel qui permet de construire, exécuter et manager des "conteneur" sur des serveurs ou directement dans le cloud. Les conteneurs quant à eux sont des fichiers ou ensembles de fichier qui définissent une application pouvant être exécutée par le service Docker. Concrètement, un conteneur est un environnment d'exécution isolé pour une application.
 
 #### GIT
 
-Git est un système de contrôle de version. C'est un système qui permet du travail collaboratif, il permet de travailler sur des fichiers différents d'un même et de rendre le tous commun en évitant des problèmes de version et d'erreur de développement.
+Git est un système de gestion de version. C'est un système qui permet le travail collaboratif, il permet de travailler sur des fichiers et de rendre le tout commun en évitant les problèmes de version et de conflits.
 
 #### GITHUB
 
-Github est une application en ligne, basé sur git, il permet le management de projet, mais, également le partage d'idée pour les projets publics. Nous utilisons dans notre cas github pour héberger les fichiers du projet et également déployer ceux-ci sur les serveurs de l'IUT avec la CI/CD.
+Github est une application en ligne, basé sur git, elle permet le management de projet, mais, également le partage d'idée pour les projets publics. Nous utilisons dans notre cas Github pour héberger les fichiers du projet et également déployer ceux-ci sur les serveurs de l'IUT avec la CI/CD.
 
 #### JSON
 
-JSON signifie **JavaScript Object Notation**, c'est un format de fichier beaucoup utiliser dans le monde du développement, particulièrement pour l'écriture de fichier de configuration.
+JSON signifie **JavaScript Object Notation**, c'est un format de fichier très utilisé dans le monde du développement, particulièrement pour l'écriture de fichiers de configuration.
 
-#### PARC ACTIFS
+#### PARC D'ACTIFS
 
-Le parc actif d'un réseau est l'ensemble des équipements réseaux qui sont en production sur un réseau.
+Le parc d'actifs d'un réseau est l'ensemble des équipements réseaux qui sont en production sur un réseau.
 
 #### PORT CONSOLE
 
-Le port console est un port dédié à la configuration d'un actif réseaux.
+Le port console est un port physique dédié à la configuration d'un actif réseaux.
 
 #### SNMP
 
-SNMP signifie **Simple Network Management Protocol**. C'est un protocole qui permet à différent équipements sur un réseau de partager des informations. Il est particulièrement utile, car, il permet à des équipements de nature différente (switch et routeur par exemple) et de version différentes de communiquer.
+SNMP signifie **Simple Network Management Protocol**. C'est un protocole qui permet à différent équipements sur un réseau de partager des informations. Il est particulièrement utile, car, il permet à des équipements de natures différentes (switch et routeur par exemple) et de versions différentes de communiquer.
 
 #### SSH
 
@@ -56,23 +56,23 @@ SSH signifie **Secure SHell**. SSH est un services de communication sécurisé, 
 
 #### TCP
 
-TCP signifie **Transmission Control Protocol**. TCP est un mode de transport des informations standard sur un réseau. Il est utilisé afin d'être sûr que l'intégralité des données sont transmise de bout en bout d'une communication.
+TCP signifie **Transmission Control Protocol**. TCP est un protocole de transport des informations standard sur un réseau. Il est utilisé afin d'être sûr que l'intégralité des données sont transmises lors d'une communication.
 
 #### TELNET
 
-TELNET signifie **TELecommunication NETwork**. TELNET est un protocole similaire à SSH cependant celui-ci n'est pas sécurisé laissant apparaitre les informations transmise librement sur le réseau.
+TELNET signifie **TELecommunication NETwork**. TELNET est un protocole similaire à SSH cependant celui-ci n'est pas sécurisé laissant apparaitre les informations transmises librement sur le réseau.
 
 #### TRUNK
 
-TRUNK est un des deux modes que peuvent prendre les ports d'un actif réseau. Il est utilisé dans le cas ou plusieurs vlan doivent circuler au même endroit.
+TRUNK est l'un des deux modes que peuvent prendre les ports d'un actif réseau. Il est utilisé dans le cas ou plusieurs vlans doivent circuler au même endroittravers d'un même port.
 
 #### UDP
 
-UDP signifie **User Datagram Protocol**. UDP est un mode de transport similaire à TCP, cependant celui ne s'assure pas de la réception des données transmises.
+UDP signifie **User Datagram Protocol**. UDP est un mode de transport similaire à TCP, cependant celui-ci ne s'assure pas de la bonne réception des données transmises.
 
 #### VLAN
 
-VLAN signifie **Virtual LAN** est un sous réseau virtuel qui permet de regrouper différent équipement se trouvant à différente location.
+VLAN signifie **Virtual LAN**. C'est un sous-réseau virtuel qui permet de regrouper différents équipements à l'intérieur d'une "unité de commutation", c'est l'équivalent d'une boite noire, elle permet de regrouper les équipements sur un même réseau.
 
 #### YAML
 
