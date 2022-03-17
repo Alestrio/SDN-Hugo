@@ -6,8 +6,6 @@ tags: ["rapport", "index"]
 weight: 4
 ---
 
-# Index
-
 #### ACCESS
 
 Le mode access est un mode de configuration de port sur les équipements cisco qui est utilisé pour la connexion de périphérique (ordinateur, imprimante ...).
