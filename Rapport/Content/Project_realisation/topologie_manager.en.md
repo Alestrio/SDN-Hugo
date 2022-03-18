@@ -22,6 +22,7 @@ A function, which we have not yet developed, will allow the interface display to
 
 As said before, we had originally developed an authentication system at the API level, with the login/password pairs stored in the database. However, we decided not to use this method, because it was much too complicated compared to the specifications we had. So we decided to create an authentication system at the manager level, with the login/password stored in a configuration file.
 This gives us two accounts:
+
 - An **administrator** account, which has administrator rights for the manager: for teachers.
 - A **user** account, which has read-only rights: for students.
 

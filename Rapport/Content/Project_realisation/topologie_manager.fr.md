@@ -22,6 +22,7 @@ Une fonction, que nous n'avons pas encore développée, permettra de mettre à j
 
 Comme dit précédemment, nous avions à la base, développé un système d'authentification au niveau de l'API, avec les couples identifiant/mot de passe stockés dans la base de données. Cependant, nous avons décidé de ne pas utiliser cette méthode, car elle était beaucoup trop compliquée par rapport au cahier des charges que nous avions. Nous avons donc décidé de créer un système d'authentification au niveau du gestionnaire, avec les identifiants/mot de passe stockés dans un fichier de configuration.
 Cela nous donne donc deux comptes :
+
 - Un compte **administrateur**, qui a les droits d'administration du gestionnaire : pour les enseignants.
 - Un compte **utilisateur**, qui a les droits de lecture seule : pour les étudiants.
 

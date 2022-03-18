@@ -15,7 +15,7 @@ This is also the tool we use to create this report. All the Markdown files are h
 
 ## Github
 
-**Github** is a collaborative platform based on **Git**, a version management utility. This platform allowed us to work each on our own on our respective tasks, then to **merge** the sources of both team members. This way, we avoid version **conflicts**, and we have a complete **history** of all versions of the project. 
+**[Github](../../../word_index/#github)** is a collaborative platform based on **[Git](../../../word_index/#gi)**, a version management utility. This platform allowed us to work each on our own on our respective tasks, then to **merge** the sources of both team members. This way, we avoid version **conflicts**, and we have a complete **history** of all versions of the project.
 ![contributions](/images/contributions.png) Team contributions on Github
 ![historique](/images/historique.png) Extract of the project history on Github
 
@@ -38,9 +38,10 @@ This way of organizing things is called **Kanban**.
 
 ## CI/CD
 
-In order not to have to manually redeploy the project every time we make a change, we set up a **CI/CD**. CI/CD stands for **Continuous Integration/Continuous Deployment**. It is an automation that allows to launch tests at each modification on a project, but also to redeploy it in production at the time of a modification on a special branch. In our case, it is the **master** branch, which is used for the automatic deployment. 
+In order not to have to manually redeploy the project every time we make a change, we set up a **[CI/CD](../../../word_index/#cicd)**. CI/CD stands for **Continuous Integration/Continuous Deployment**. It is an automation that allows to launch tests at each modification on a project, but also to redeploy it in production at the time of a modification on a special branch. In our case, it is the **master** branch, which is used for the automatic deployment.
 
 The virtual machine that is used for the automatic deployment is an Ubuntu server, which is hosted on the datacenter of the IUT. On this machine, we have installed a **worker**, which is a service that allows to launch the actions that we have defined in the .github/workflows/deploy_dc_chalons.yml file. This file defines the actions to be performed during an automatic deployment. In our case, here are the actions performed:
+
 - **Pull**: allows to retrieve the changes from the GitHub server on the deployment server.
 - **Build**: create the Docker images for the automatic deployment.
 - **Upload**: allows to send the Docker images to the image host (here Google Cloud, Artifact Registry).

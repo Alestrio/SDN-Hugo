@@ -11,8 +11,9 @@ weight: 1
 L'un des principes que nous avons tenu à mettre en place dans le cadre de notre projet est de conteneuriser nos applications.
 La **conteneurisation** est une technique qui consiste à encapsuler des applications dans des unités indépendantes et isolées. Cela permet un déploiement rapide, et plus de sécurité.
 Cela nous permet une plus grande **modularité**, puisque l'installation qui était autrefois fastidieuse, et qui impactait l'environnement du système, n'est plus nécessaire. Pour déployer une application, il suffit d'une seule commande, ou d'un bloc dans un fichier YAML.
-Le paquet que nous utilisons est **Docker**, qui est un service de conteneurisation assez répandu.
+Le paquet que nous utilisons est **[Docker](../../../word_index/#docker)**, qui est un service de conteneurisation assez répandu.
 Dans le cadre de notre projet, la conteneurisation a été mise en place, de façon à ce que tous les services nécessaires soient **instantiables** (puissent être démarrés) d'une seule commande. Voici les services qui sont en production, et qui sont tous démarrés en tant que **conteneurs** :
+
 - **DNS** : Un service BIND qui tourne avec les fichiers de configuration en lecture seule.
 - **Base de données** : Une base de données MongoDB, avec les fichiers de la base dans un répertoire /home/mongo.
 - **Serveur web** : Un serveur web pour la documentation (sur laquelle vous êtes), avec les fichiers HML générés par Hugo en lecture seule.
@@ -34,6 +35,7 @@ Traefik fournit aussi une interface web, qui permet de surveiller le bon fonctio
 
 Le **DNS** permet de traduire des noms de domaine en adresses IP. Il est un des fondements d'Internet, et notre projet ne déroge pas à ce principe.
 Dans le cadre de notre projet, plusieurs ressources nous ont été accordées :
+
 - un enregistrement A : cloudstack.chalons.univ-reims.fr
 - une délégation de zone : sdn.chalons.univ-reims.fr
 
