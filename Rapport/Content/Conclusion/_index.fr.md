@@ -2,13 +2,15 @@
 title = "Conclusion"
 date = 2022-01-27T17:07:28+02:00
 weight = 6
-chapter = true
-
+chapter = false
 +++
 
+Pour conclure ce rapport de projet, on peut dire que le projet a été réalisé en garned partie avec succès.
+Nous avons pu développer un interface de configuration des actifs d'ancienne génération, ainsi que l'interface web pour utiliser cette interface de configuration. \
+Pendant ce projet, nous avons pu utiliser beaucoup de technologies aujourd'hui utilisées en production, pour des applications de grande envergure.
 
-En conclusion, la réalisation d'une application permettant de déployer des topologies réseau facilement et par tout le monde, a été un projet des plus enrichissant et intéressant à réaliser.
+Personnellement, nous avons beaucoup appris grâce à ce projet. Nous avons pu apprendre à nous servir des nouvelles technologies de production (Conteneurisation, Traefik, Déploiement automatique, etc.) \
+Nous avons aussi pu consolider nos connaissances en programmation, à travers le développement de l'interface web et de l'interface de configuration (avec des technologies comme FastAPI, Flask, etc.). \
+Enfin grâce à ce projet, nous avons pu consolider nos compétences de travail en équipe.
 
-La partie recherche sur SNMP et HUGO ainsi que le déploiement des outils nécessaires au bon fonctionnement du projet, ont été des parties très enrichissantes pour de futur projet, puisque cele-ci nous permettrons de les redéployer de manière simple et efficace.
-
-De plus, les différents aspects techniques de l'application ont rendu l'entièreté de ce projet intéressant et nous a maintenue, tout au long de la réalisation, captif et investi.
+Nous espérons pouvoir nous servir à nouveau de ces connaissances pour des projet futurs !
