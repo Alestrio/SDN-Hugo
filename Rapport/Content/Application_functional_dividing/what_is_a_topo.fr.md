@@ -16,6 +16,7 @@ La topologie est donc un empilement de l'ensemble de ces informations.
 La sélection de la topologie se fera par la suite au travers de l'interface web dans laquelle nous devrons définir les critères de choix de la topologie.
 
 Pour cela on se base sur quatre critères principaux :
+
 - La salle de TP
 - La classe (RT1, RT2 ...)
 - Le groupe de TD/TP (TP1A, TP1B ...)

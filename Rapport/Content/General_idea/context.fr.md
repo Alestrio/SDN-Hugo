@@ -19,6 +19,5 @@ Ils **dépendent de la promotion et du groupe** utilisant la salle, ainsi que de
 
 A ce jour, la projection de ces services est dite **statique** ce qui signifie que tous les cas sont manuellement projetés dans chaque salles.
 Cette façon de faire implique un manque de prise réseaux pour la projection de services supplémentaires dans des cas spécifiques. \
-Dans le cas de TPs nécessitant des services non-disponibles dans la salle de TP, il faut redéployer **manuellement** des services, et les personnes abilitées à le faire sont peu nombreuses. 
+Dans le cas de TPs nécessitant des services non-disponibles dans la salle de TP, il faut redéployer **manuellement** des services, et les personnes abilitées à le faire sont peu nombreuses.
 Dans le cas d'un TP mené par un intervenant extérieur avec des besoins spécifiques, cela nécessite l'action d'une personne abilitée, pas forcément disponible.
-

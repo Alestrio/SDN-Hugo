@@ -9,6 +9,7 @@ weight: 3
 ## Structure des topologies
 
 Les topologies sont stockées sous forme de chaînes de caractères au format YAML. La structure de cette chaine est simple, elle est composée de 4 parties :
+
 - **name** : le nom de la topologie -> utilisé pour identifier la topologie à la place de son ID, beaucoup trop lourd pour l'utilisateur
 - **vlans** : la liste des VLANs utiles à l'application de la topologie, à créer si nécessaire
 - **interfaces** : la liste des configurations des interfaces de la topologie
@@ -19,6 +20,7 @@ Un exemple de topologie est proposé en annexe 5
 ## Comment sauvegarder une topologie
 
 Tout d'abord, il a fallu faire un choix au niveau de la technique de stockage de ces données. Nous avions plusieurs solutions :
+
 - Les stocker sous forme de fichiers **YAML**, dans un dossier spécifique sur le serveur
 - Les stocker dans une **base de données**
 

@@ -9,6 +9,7 @@ weight: 3
 ## Topology structure
 
 Topologies are stored as strings in YAML format. The structure of this string is simple, it is composed of 4 parts:
+
 - **name** : the name of the topology -> used to identify the topology instead of its ID, too heavy for the user
 - **vlans** : the list of VLANs useful for the topology application, to be created if necessary
 - **interfaces** : the list of interfaces configurations of the topology
@@ -19,6 +20,7 @@ An example of topology is proposed in appendix 5
 ## How to save a topology
 
 First of all, we had to make a choice regarding the storage technique of these data. We had several solutions:
+
 - Store them as **YAML** files, in a specific folder on the server
 - Store them in a **database**.
 

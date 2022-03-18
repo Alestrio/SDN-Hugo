@@ -15,7 +15,7 @@ C'est aussi l'outil que nous utilisons afin de créer ce rapport. L'ensemble des
 
 ## Github
 
-**Github** est une plateforme collaborative reposant sur **Git**, un utilitaire de gestion de version. Cette plateforme nous a permis de travailler chacun de notre côté sur nos tâches respectives, puis de **fusionner** les sources des deux membres de l'équipe. Ainsi, nous évitons les **conflits** de version, et nous avons un **historique** complet de toutes les versions du projet. 
+**[Github](../../../word_index/#github)** est une plateforme collaborative reposant sur **[Git](../../../word_index/#git)**, un utilitaire de gestion de version. Cette plateforme nous a permis de travailler chacun de notre côté sur nos tâches respectives, puis de **fusionner** les sources des deux membres de l'équipe. Ainsi, nous évitons les **conflits** de version, et nous avons un **historique** complet de toutes les versions du projet.
 ![contributions](/images/contributions.png) Contributions de l'équipe sur Github
 ![historique](/images/historique.png) Extrait d'historique du projet sur Github
 
@@ -38,9 +38,10 @@ Cette façon d'organiser les choses s'appelle le **Kanban**.
 
 ## CI/CD
 
-Afin de ne pas avoir à redéployer le projet manuellement à chaque modification, nous avons mis en place une **CI/CD**. CI/CD signifie **Continuous Integration/Continuous Deployment**. C'est une automatisation qui permet de lancer des tests à chaque modification sur un projet, mais aussi de le redéployer en production lors d'une modification sur une branche spéciale. Dans notre cas, c'est la branche **master**, qui est utilisée pour le déploiement automatique. 
+Afin de ne pas avoir à redéployer le projet manuellement à chaque modification, nous avons mis en place une **[CI/CD](../../../word_index/#cicd)**. CI/CD signifie **Continuous Integration/Continuous Deployment**. C'est une automatisation qui permet de lancer des tests à chaque modification sur un projet, mais aussi de le redéployer en production lors d'une modification sur une branche spéciale. Dans notre cas, c'est la branche **master**, qui est utilisée pour le déploiement automatique.
 
 La machine virtuelle qui est utilisée pour le déploiement automatique est un serveur Ubuntu, qui est hébergé sur le datacenter de l'IUT. Sur cette machine, nous avons installé un **worker**, qui est un service qui permet de lancer les actions que nous avons définies dans le fichier .github/workflows/deploy_dc_chalons.yml. Ce fichier définit les actions à effectuer lors d'un déploiement automatique. Dans notre cas, voici les actions effectuées :
+
 - **Pull** : permet de récupérer les modifications depuis le serveur de GitHub sur le serveur de déploiement.
 - **Build** : permet de créer les images Docker pour le déploiement automatique.
 - **Upload** : permet d'envoyer les images Docker sur l'hébergeur d'images (ici, Google Cloud, Artifact Registry).
@@ -56,4 +57,3 @@ Afin de stocker les images Docker, pour les récupérer sur n'importe quelle mac
 
 ![gcp_ar](/images/gcp_ar.jpg) Google Cloud, Artifact Registry
 ![gcp_prod](/images/gcp_prod.jpg) Déploiement sur serveur
-

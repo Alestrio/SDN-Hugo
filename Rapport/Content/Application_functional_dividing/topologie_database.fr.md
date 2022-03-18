@@ -37,6 +37,7 @@ La base de données est la mémoire de notre projet. C'est l'outil qui va nous p
     "speed": 0
   }
   ```
+
 (cf Annexe 5)
 
 C'est donc ainsi que les informations nécessaires à la configuration seront stockées dans notre base de données.
