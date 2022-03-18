@@ -8,7 +8,7 @@ weight: 4
 
 The database is the memory of our project. It is the tool that will allow us to store all the different topologies, but also to retrieve them when necessary. The topology files can look like this:
 
-``json
+```json
   {
     "name": "Vlan1",
     "description": "Vlan1",
@@ -37,6 +37,7 @@ The database is the memory of our project. It is the tool that will allow us to 
     "speed": 0
   }
   ```
+  
 (see Appendix 5)
 
 This is how the information needed for the configuration will be stored in our database.
@@ -45,14 +46,14 @@ But this information can come in three forms:
 
 The first is in the case of the configuration of a vlan. In this case, in cisco it is necessary to do :
 
-``config
+```config
 SWITCH(config)#vlan {numero}
 SWITCH(config-vlan)#name {name}
 ```
 
 Which in our database will be summarized as:
 
-``json
+```json
   {
     "description": "{name}",
     "dot1q_id": {numero}
@@ -61,14 +62,14 @@ Which in our database will be summarized as:
 
 The second case is that of an interface in **trunk** mode, which requires to do :
 
-``config
+```config
 SWITCH(config)#interface fastethernet 0/1
 SWITCH(config-if)#switchport mode trunk
 ```
 
 In our case, we will get :
 
-``json
+```json
   {
     "interface": {
       "name": "FastEthernet2/0/47",
@@ -97,14 +98,14 @@ In our case, we will get :
 
 The last case we may encounter is the case of an interface in **access** mode which translates in Cisco dialect as :
 
-``config
+```config
 SWITCH(config)#interface ethernet0/1
 SWITCH(config-if)#switchport mode access
 ```
 
 This will result in the database:
 
-``json
+```json
   {
     "name": "FastEthernet1/0/38",
     "description": "FastEthernet1/0/38",

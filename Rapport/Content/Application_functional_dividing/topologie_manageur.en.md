@@ -9,9 +9,9 @@ weight: 3
 The topology manager is the key part of our project, it is the software part that makes the **link between the web portal, the assets and the database**.
 We will see concretely how it works and why we need it.
 
-Today, changing a configuration is done manually using protocols that require human intervention (**[port console](/word_index/#port-console "port dedicated to configuration on a network device")**, **[ssh](/word_index/#ssh "secure network communication method")**, **[telnet](/word_index/#telnet "non-secure network communication method")**), however this generates a human dependency. Even though these methods allow you to change configurations, it requires the intervention of a **authorized person**.
+Today, changing a configuration is done manually using protocols that require human intervention (**[port console](../../../word_index/#port-console "port dedicated to configuration on a network device")**, **[ssh](../../../word_index/#ssh "secure network communication method")**, **[telnet](../../../word_index/#telnet "non-secure network communication method")**), however this generates a human dependency. Even though these methods allow you to change configurations, it requires the intervention of a **authorized person**.
 
-To overcome this problem, the most recent switches have software programming interfaces, also called **[APIs](/word_index/#api "set of functions and procedures creating an application")**, but this technology is only available on the most recent models and therefore is not available on all the **[asset pool](/word_index/#asset pool "set of equipment in production on a network")** of the IUT.
+To overcome this problem, the most recent switches have software programming interfaces, also called **[APIs](../../../word_index/#api "set of functions and procedures creating an application")**, but this technology is only available on the most recent models and therefore is not available on all the **[asset pool](../../../word_index/#asset-pool "set of equipment in production on a network")** of the IUT.
 
 On older models, it is nevertheless possible to read and modify configurations using **supervision tools**.
 
