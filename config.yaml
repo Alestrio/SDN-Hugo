@@ -1,0 +1,15 @@
+theme: "hugo-theme-learn"
+languageCode: 'fr-fr'
+title: 'SDN-Cloudstack - Documentation'
+
+languages:
+  en:
+    contentDir: "content" #English
+    weight: 1
+    languageName: "English"
+  fr:
+    contentDir: "content"
+    weight: 2
+    languageName: "Français"
+
+staticDir: "static"
