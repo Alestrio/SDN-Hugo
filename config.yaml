@@ -1,7 +1,8 @@
 theme: "hugo-theme-learn"
-languageCode: 'fr-fr'
+languageCode: 'fr'
 title: 'SDN-Cloudstack - Documentation'
 
+defaultContentLanguage: fr
 languages:
   en:
     contentDir: "content" #English
